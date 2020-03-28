@@ -1,13 +1,13 @@
 import React from 'react'
 import { routes } from './routes'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, HashRouter } from 'react-router-dom'
 import { Box, Flex, Text } from 'rebass'
 import { Link } from 'react-router-dom'
 import { renderRoutes } from 'react-router-config'
 
 const ClientRoutes = ({ route }) => {
   return (
-    <BrowserRouter  basename={window.location.pathname}>
+    <HashRouter>
       <Box
         sx={{
           maxWidth: 512,
@@ -25,7 +25,7 @@ const ClientRoutes = ({ route }) => {
         </Flex>
       </Box>
       {renderRoutes(routes)}
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
