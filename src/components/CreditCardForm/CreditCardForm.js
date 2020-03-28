@@ -3,7 +3,7 @@ import Cards from 'react-credit-cards'
 import 'react-credit-cards/es/styles-compiled.css'
 import { useFormik, FormikProvider } from 'formik'
 import { Box, Button } from 'rebass'
-import TextInput from './components/Form/TextInput'
+import TextInput from '../Form/TextInput'
 import * as Yup from 'yup'
 
 export const CreditCardForm = () => {
@@ -52,7 +52,7 @@ export const CreditCardForm = () => {
             <TextInput name="cvc" label="cvc" />
           </div>
         </Box>
-        <Button variant='secondary'>Submit</Button>
+        <Button variant="secondary">Submit</Button>
       </form>
     </FormikProvider>
   )
