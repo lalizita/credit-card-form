@@ -1,21 +1,19 @@
-import React from 'react';
-import { Box, Flex, Text } from 'rebass';
-function App() {
+import React from 'react'
+import { renderRoutes } from 'react-router-config'
+import { Box } from 'rebass'
+
+function App({ route }) {
   return (
     <Box
       sx={{
         maxWidth: 512,
         mx: 'auto',
-        px: 3,
-      }}>
-    <Flex
-      flexDirection='column'
-      px={2}
-      alignItems='center'>
-      <Text p={2} fontWeight='bold'>FORMIK, THEMING AND ROUTE STUDIES</Text>
-    </Flex>
-  </Box>
-  );
+        px: 3
+      }}
+    >
+      {renderRoutes(route.routes)}
+    </Box>
+  )
 }
 
-export default App;
+export default App

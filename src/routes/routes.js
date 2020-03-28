@@ -1,34 +1,21 @@
-import React from 'react'
-import CreditCardForm from '../CreditCardForm';
-import Test from '../Test';
-
+import App from '../App'
+import CreditCardForm from '../components/CreditCardForm/CreditCardForm'
+import Test from '../components/Test/Test'
 
 export const routes = [
   {
-    path: '/',
-    component: React.lazy(() => import('../App')),
-    exact:true,
-    // @TODO make it works
-    // routes: [
-    //   {
-    //     path: '/test',
-    //     exact:true,
-    //     component: React.lazy(() => import('../Test'))
-    //   },
-    //   {
-    //     path: '/credit-card',
-    //     component: React.lazy(() => import('../CreditCardForm'))
-    //   }
-    // ]
-  },
-  {
-    path: '/test',
-    // exact: true,
-    component: React.lazy(() => import('../Test'))
-  },
-  {
-    path: '/credit-card',
-    // exact:true,
-    component: React.lazy(() => import('../CreditCardForm'))
+    component: App,
+    routes: [
+      {
+        path: '/test',
+        exact: true,
+        component: Test
+      },
+      {
+        path: '/credit-card',
+        exact: true,
+        component: CreditCardForm
+      }
+    ]
   }
 ]
