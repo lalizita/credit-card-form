@@ -7,7 +7,7 @@ import { renderRoutes } from 'react-router-config'
 
 const ClientRoutes = ({ route }) => {
   return (
-    <BrowserRouter>
+    <BrowserRouter  basename={window.location.pathname}>
       <Box
         sx={{
           maxWidth: 512,
