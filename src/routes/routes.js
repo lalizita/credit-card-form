@@ -1,13 +1,11 @@
-import React from 'react'
-import CreditCardForm from '../CreditCardForm';
-import Test from '../Test';
-
+import App from '../App';
+import CreditCardForm from '../CreditCardForm'
+import Test from '../Test'
 
 export const routes = [
   {
-    path: '/',
-    component: React.lazy(() => import('../App')),
-    exact:true,
+    component: App,
+    
     // @TODO make it works
     // routes: [
     //   {
@@ -20,15 +18,18 @@ export const routes = [
     //     component: React.lazy(() => import('../CreditCardForm'))
     //   }
     // ]
+    routes: [
+      {
+        path: '/test',
+        exact: true,
+        component:  Test,
+      },
+      {
+        path: '/credit-card',
+        exact:true,
+        component: CreditCardForm,
+      }
+    ]
   },
-  {
-    path: '/test',
-    // exact: true,
-    component: React.lazy(() => import('../Test'))
-  },
-  {
-    path: '/credit-card',
-    // exact:true,
-    component: React.lazy(() => import('../CreditCardForm'))
-  }
+  
 ]

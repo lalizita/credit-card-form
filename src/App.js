@@ -1,6 +1,8 @@
 import React from 'react';
+import { renderRoutes } from 'react-router-config';
 import { Box, Flex, Text } from 'rebass';
-function App() {
+function App({route}) {
+  console.log("ROUTE", route)
   return (
     <Box
       sx={{
@@ -8,12 +10,7 @@ function App() {
         mx: 'auto',
         px: 3,
       }}>
-    <Flex
-      flexDirection='column'
-      px={2}
-      alignItems='center'>
-      <Text p={2} fontWeight='bold'>FORMIK, THEMING AND ROUTE STUDIES</Text>
-    </Flex>
+    {renderRoutes(route.routes)}
   </Box>
   );
 }

@@ -3,12 +3,13 @@ import { routes } from './routes'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Box, Flex, Text } from 'rebass';
 import { Link } from 'react-router-dom';
-// import { renderRoutes } from 'react-router-config'
+import { renderRoutes } from 'react-router-config'
 
-const ClientRoutes = () => {
+const ClientRoutes = ({ route }) => {
+  console.log("ORUTE", route)
   return (
     <BrowserRouter>
-      <Switch>
+      {/* <Switch> */}
           <Box
           sx={{
             maxWidth: 512,
@@ -29,8 +30,8 @@ const ClientRoutes = () => {
           </Link>
         </Flex>
       </Box>
-      {/* {renderRoutes(routes.routes)} */}
-        {routes.map((route, index) => {
+      {renderRoutes(routes)}
+        {/* {routes.map((route, index) => {
           return (
             <Route
               key={route.path}
@@ -39,8 +40,8 @@ const ClientRoutes = () => {
               component={route.component}
             />
           )
-        })}
-      </Switch>
+        })} */}
+      {/* </Switch> */}
     </BrowserRouter>
   )
 }
