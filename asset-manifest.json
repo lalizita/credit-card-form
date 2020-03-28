@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/credit-card-form/static/js/main.639866a8.chunk.js",
+    "main.js.map": "/credit-card-form/static/js/main.639866a8.chunk.js.map",
+    "runtime-main.js": "/credit-card-form/static/js/runtime-main.2f53a855.js",
+    "runtime-main.js.map": "/credit-card-form/static/js/runtime-main.2f53a855.js.map",
+    "static/css/2.5353b2f2.chunk.css": "/credit-card-form/static/css/2.5353b2f2.chunk.css",
+    "static/js/2.3c871c8c.chunk.js": "/credit-card-form/static/js/2.3c871c8c.chunk.js",
+    "static/js/2.3c871c8c.chunk.js.map": "/credit-card-form/static/js/2.3c871c8c.chunk.js.map",
+    "static/js/3.2786c38f.chunk.js": "/credit-card-form/static/js/3.2786c38f.chunk.js",
+    "static/js/3.2786c38f.chunk.js.map": "/credit-card-form/static/js/3.2786c38f.chunk.js.map",
+    "index.html": "/credit-card-form/index.html",
+    "precache-manifest.d782ac51a5f883598ebf4cbba0070657.js": "/credit-card-form/precache-manifest.d782ac51a5f883598ebf4cbba0070657.js",
+    "service-worker.js": "/credit-card-form/service-worker.js",
+    "static/css/2.5353b2f2.chunk.css.map": "/credit-card-form/static/css/2.5353b2f2.chunk.css.map",
+    "static/js/2.3c871c8c.chunk.js.LICENSE.txt": "/credit-card-form/static/js/2.3c871c8c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2f53a855.js",
+    "static/css/2.5353b2f2.chunk.css",
+    "static/js/2.3c871c8c.chunk.js",
+    "static/js/main.639866a8.chunk.js"
+  ]
+}
